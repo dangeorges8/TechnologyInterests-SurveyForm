@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
+  
+  <form id="survey-form">
   <h1 id="title">Technology Interests Survey Form</h1>
 
-  <p id="description">Let'see what are your technology interests!</p>
+  <p id="description">Let'see what are your technology interests!</p>  
 
-  <form id="survey-form">
-
-    <div class="form-group">
+    <div class="form-group1">
       <label id="name-label" for="name">Name</label>
       <input type="text" id="name" class="form-control" 
       placeholder="Enter your name" required>
@@ -36,7 +37,7 @@
       </select>  
     </div>
 
-    <div class="form-group">
+    <div class="form-group2">
       <p>Which one was your first programming language?</p>
       <label>
         <input type="radio"class="input-radio" name="user-programming-language" value="javascript">
@@ -60,7 +61,7 @@
       </label>
     </div>
 
-    <div class="form-group">
+    <div class="form-group2">
       <p>
         What are your main interest areas in software or web development?
       <span class="clue">(Check all that apply)</span>
@@ -98,6 +99,13 @@
       Cloud
     </label>
     </div>
+
+    <div class="form-group2">
+      <p>Any other areas you'd like to mention?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your aditional information here"></textarea>
+    </div>
+
+    <button id="submit">Submit</button>
   </form>
   
 </body>
